@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/playerName"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Player Name"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+
+        <TextView
+            android:id="@+id/totalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Total Score: 0"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/percentage_contribution"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Percentage；0"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/totalScore"
+            app:layout_constraintHorizontal_bias="0.694"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/marks"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Marks: 0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/goals"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Goals: 0"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/behinds"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Behinds: 0"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tackles"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Tackles: 0"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/handballs"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/handballs"
+            app:layout_constraintTop_toTopOf="@+id/handballs" />
+
+        <TextView
+            android:id="@+id/kicks"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Kicks: 0"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/handballs"
+            android:layout_width="144dp"
+            android:layout_height="match_parent"
+            android:padding="8dp"
+            android:text="Handballs: 0"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/kicks" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

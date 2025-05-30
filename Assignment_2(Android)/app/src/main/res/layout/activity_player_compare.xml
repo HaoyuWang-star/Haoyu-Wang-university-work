@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlayerCompareActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="193dp"
+        android:layout_height="154dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="2dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select First Player"
+            android:textSize="18sp" />
+        <!-- left side teams and players selected -->
+        <Spinner
+            android:id="@+id/spinnerLeftTeam"
+            android:layout_width="173dp"
+            android:layout_height="53dp" />
+
+        <Spinner
+            android:id="@+id/spinnerLeftPlayer"
+            android:layout_width="173dp"
+            android:layout_height="57dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="218dp"
+        android:layout_height="156dp"
+        android:orientation="vertical"
+        android:padding="16dp"
+        app:layout_constraintBaseline_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/linearLayout1"
+        app:layout_constraintTop_toTopOf="parent">
+        <!-- right side teams and players selected -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select Second Player"
+            android:textSize="18sp" />
+
+        <Spinner
+            android:id="@+id/spinnerRightTeam"
+            android:layout_width="190dp"
+            android:layout_height="57dp" />
+
+        <Spinner
+            android:id="@+id/spinnerRightPlayer"
+            android:layout_width="190dp"
+            android:layout_height="59dp" />
+
+        <!-- 显示比较的 LineChart -->
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="clip_horizontal|center"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout1">
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="364dp"
+            android:layout_height="288dp" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Close"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

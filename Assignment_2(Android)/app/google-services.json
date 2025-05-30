@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1030717588718",
+    "project_id": "week-5-tutorial-6677c",
+    "storage_bucket": "week-5-tutorial-6677c.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1030717588718:android:1ae78c58d4b1dd5aa3dfff",
+        "android_client_info": {
+          "package_name": "au.edu.utas.kit305.tutorial05"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDxQ9Qf9IrxmWvGI2Bxwb1y2ToHxmx1H50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
